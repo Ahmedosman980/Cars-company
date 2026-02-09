@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Collection - Prestige Motors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>Prestige Motors</h1>
+                    <span class="tagline">Excellence in Motion</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="vehicles.html" class="nav-link active">Vehicles</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Our Vehicle Collection</h1>
+                <p>Discover an extraordinary selection of premium vehicles, each meticulously maintained and ready to deliver an exceptional driving experience.</p>
+            </div>
+        </section>
+
+        <section class="vehicle-filters">
+            <div class="container">
+                <div class="filter-controls">
+                    <div class="filter-group">
+                        <label>Category:</label>
+                        <select id="categoryFilter">
+                            <option value="all">All Vehicles</option>
+                            <option value="sedan">Luxury Sedans</option>
+                            <option value="sports">Sports Cars</option>
+                            <option value="suv">Premium SUVs</option>
+                            <option value="electric">Electric Vehicles</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Price Range:</label>
+                        <select id="priceFilter">
+                            <option value="all">All Prices</option>
+                            <option value="50000-75000">$50,000 - $75,000</option>
+                            <option value="75000-100000">$75,000 - $100,000</option>
+                            <option value="100000-150000">$100,000 - $150,000</option>
+                            <option value="150000+">$150,000+</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Sort By:</label>
+                        <select id="sortFilter">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="year">Year: Newest</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sedans" class="vehicle-section">
+            <div class="container">
+                <h2 class="section-title">Luxury Sedans</h2>
+                <p class="section-subtitle">Elegance, comfort, and sophisticated performance in our premium sedan collection.</p>
+                
+                <div class="vehicle-grid">
+                    <div class="vehicle-card" data-category="sedan" data-price="85000">
+                        <div class="vehicle-image sedan-1"></div>
+                        <div class="vehicle-content">
+                            <div class="vehicle-badge">New Arrival</div>
+                            <h3>Mercedes-Benz S-Class 2024</h3>
+                            <div class="vehicle-specs">
+                                <span>3.0L V6</span>
+                                <span>429 HP</span>
+                                <span>AWD</span>
+                            </div>
+                            <p>Experience unparalleled luxury with cutting-edge technology and supreme comfort in this flagship sedan.</p>
+                            <div class="vehicle-features">
+                                <span class="feature">Leather Interior</span>
+                                <span class="feature">Panoramic Roof</span>
+                                <span class="feature">Premium Audio</span>
+                            </div>
+                            <div class="vehicle-price">$85,000</div>
+                            <div class="vehicle-actions">
+                                <button class="btn btn-primary" onclick="scheduleTestDrive('Mercedes-Benz S-Class')">Schedule Test Drive</button>
+                                <button class="btn btn-outline" onclick="viewDetails('S-Class')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vehicle-card" data-category="sedan" data-price="92000">
+                        <div class="vehicle-image sedan-2"></div>
+                        <div class="vehicle-content">
+                            <div class="vehicle-badge">Premium</div>
+                            <h3>BMW 7 Series 2024</h3>
+                            <div class="vehicle-specs">
+                                <span>3.0L Inline-6</span>
+                                <span>375 HP</span>
+                                <span>RWD</span>
+                            </div>
+                            <p>Dynamic driving pleasure meets executive luxury in this sophisticated performance sedan.</p>
+                            <div class="vehicle-features">
+                                <span class="feature">Sport Package</span>
+                                <span class="feature">Advanced Safety</span>
+                                <span class="feature">Wireless Charging</span>
+                            </div>
+                            <div class="vehicle-price">$92,000</div>
+                            <div class="vehicle-actions">
+                                <button class="btn btn-primary" onclick="scheduleTestDrive('BMW 7 Series')">Schedule Test Drive</button>
+                                <button class="btn btn-outline" onclick="viewDetails('7 Series')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vehicle-card" data-category="sedan" data-price="78000">
+                        <div class="vehicle-image sedan-3"></div>
+                        <div class="vehicle-content">
+                            <div class="vehicle-badge">Best Value</div>
+                            <h3>Audi A8 2024</h3>
+                            <div class="vehicle-specs">
+                                <span>3.0L V6</span>
+                                <span>335 HP</span>
+                                <span>Quattro AWD</span>
+                            </div>
+                            <p>German engineering excellence with progressive design and innovative technology features.</p>
+                            <div class="vehicle-features">
+                                <span class="feature">Matrix LED</span>
+                                <span class="feature">Air Suspension</span>
+                                <span class="feature">Virtual Cockpit</span>
+                            </div>
+                            <div class="vehicle-price">$78,000</div>
+                            <div class="vehicle-actions">
+                                <button class="btn btn-primary" onclick="scheduleTestDrive('Audi A8')">Schedule Test Drive</button>
+                                <button class="btn btn-outline" onclick="viewDetails('A8')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sports" class="vehicle-section">
+            <div class="container">
+                <h2 class="section-title">Sports Cars</h2>
+                <p class="section-subtitle">Unleash adrenaline with our high-performance sports vehicles designed for pure driving excitement.</p>
+                
+                <div class="vehicle-grid">
+                    <div class="vehicle-card" data-category="sports" data-price="145000">
+                        <div class="vehicle-image sports-1"></div>
+                        <div class="vehicle-content">
+                            <div class="vehicle-badge">Top Performance</div>
+                            <h3>Porsche 911 Carrera 4S 2024</h3>
+                            <div class="vehicle-specs">
+                                <span>3.0L Twin-Turbo</span>
+                                <span>443 HP</span>
+                                <span>AWD</span>
+                            </div>
+                            <p>The iconic sports car redefined with precision engineering and exhilarating performance.</p>
+                            <div class="vehicle-features">
+                                <span class="feature">Sport Chrono</span>
+                                <span class="feature">PDK Transmission</span>
+                                <span class="feature">Adaptive Suspension</span>
+                            </div>
+                            <div class="vehicle-price">$145,000</div>
+                            <div class="vehicle-actions">
+                                <button class="btn btn-primary" onclick="scheduleTestDrive('Porsche 911')">Schedule Test Drive</button>
+                                <button class="btn btn-outline" onclick="viewDetails('911 Carrera')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vehicle-card" data-category="sports" data-price="185000">
+                        <div class="vehicle-image sports-2"></div>
+                        <div class="vehicle-content">
+                            <div class="vehicle-badge">Exclusive</div>
+                            <h3>Ferrari Roma 2024</h3>
+                            <div class="vehicle-specs">
+                                <span>3.9L V8 Twin-Turbo</span>
+                                <span>612 HP</span>
+                                <span>RWD</span>
+                            </div>
+                            <p>Italian elegance and breathtaking performance in this sophisticated grand tourer.</p>
+                            <div class="vehicle-features">
+                                <span class="feature">Carbon Fiber</span>
+                                <span class="feature">Brembo Brakes</span>
+                                <span class="feature">Premium Exhaust</span>
+                            </div>
+                            <div class="vehicle-price">$185,000</div>
+                            <div class="vehicle-actions">
+                                <button class="btn btn-primary" onclick="scheduleTestDrive('Ferrari Roma')">Schedule Test Drive</button>
+                                <button class="btn btn-outline" onclick="viewDetails('Roma')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vehicle-card" data-category="sports" data-price="125000">
+                        <div class="vehicle-image sports-3"></div>
+                        <div class="vehicle-content">
+                            <div class="vehicle-badge">Track Ready</div>
+                            <h3>Chevrolet Corvette Z06 2024</h3>
+                            <div class="vehicle-specs">
+                                <span>5.5L V8</span>
+                                <span>670 HP</span>
+                                <span>RWD</span>
+                            </div>
+                            <p>American supercar performance with racing DNA and cutting-edge aerodynamics.</p>
+                            <div class="vehicle-features">
+                                <span class="feature">Magnetic Ride</span>
+                                <span class="feature">Carbon Ceramic</span>
+                                <span class="feature">Track Package</span>
+                            </div>
+                            <div class="vehicle-price">$125,000</div>
+                            <div class="vehicle-actions">
+                                <button class="btn btn-primary" onclick="scheduleTestDrive('Corvette Z06')">Schedule Test Drive</button>
+                                <button class="btn btn-outline" onclick="viewDetails('Z06')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="suvs" class="vehicle-section">
+            <div class="container">
+                <h2 class="section-title">Premium SUVs</h2>
+                <p class="section-subtitle">Command the road with our luxury SUVs combining versatility, comfort, and impressive capability.</p>
+                
+                <div class="vehicle-grid">
+                    <div class="vehicle-card" data-category="suv" data-price="95000">
+                        <div class="vehicle-image suv-1"></div>
+                        <div class="vehicle-content">
+                            <div class="vehicle-badge">Family Favorite</div>
+                            <h3>Range Rover Sport 2024</h3>
+                            <div class="vehicle-specs">
+                                <span>3.0L Inline-6</span>
+                                <span>395 HP</span>
+                                <span>AWD</span>
+                            </div>
+                            <p>British luxury meets off-road capability in this sophisticated and versatile SUV.</p>
+                            <div class="vehicle-features">
+                                <span class="feature">Terrain Response</span>
+                                <span class="feature">Air Suspension</span>
+                                <span class="feature">7 Seats Available</span>
+                            </div>
+                            <div class="vehicle-price">$95,000</div>
+                            <div class="vehicle-actions">
+                                <button class="btn btn-primary" onclick="scheduleTestDrive('Range Rover Sport')">Schedule Test Drive</button>
+                                <button class="btn btn-outline" onclick="viewDetails('Range Rover')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vehicle-card" data-category="suv" data-price="88000">
+                        <div class="vehicle-image suv-2"></div>
+                        <div class="vehicle-content">
+                            <div class="vehicle-badge">Luxury</div>
+                            <h3>BMW X7 2024</h3>
+                            <div class="vehicle-specs">
+                                <span>3.0L Inline-6</span>
+                                <span>375 HP</span>
+                                <span>AWD</span>
+                            </div>
+                            <p>Spacious luxury SUV with premium amenities and advanced driver assistance features.</p>
+                            <div class="vehicle-features">
+                                <span class="feature">6-Seater Config</span>
+                                <span class="feature">Executive Package</span>
+                                <span class="feature">Gesture Control</span>
+                            </div>
+                            <div class="vehicle-price">$88,000</div>
+                            <div class="vehicle-actions">
+                                <button class="btn btn-primary" onclick="scheduleTestDrive('BMW X7')">Schedule Test Drive</button>
+                                <button class="btn btn-outline" onclick="viewDetails('X7')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vehicle-card" data-category="suv" data-price="105000">
+                        <div class="vehicle-image suv-3"></div>
+                        <div class="vehicle-content">
+                            <div class="vehicle-badge">Electric</div>
+                            <h3>Tesla Model X Plaid 2024</h3>
+                            <div class="vehicle-specs">
+                                <span>Electric</span>
+                                <span>1,020 HP</span>
+                                <span>AWD</span>
+                            </div>
+                            <p>Revolutionary electric SUV with mind-bending acceleration and cutting-edge technology.</p>
+                            <div class="vehicle-features">
+                                <span class="feature">Falcon Doors</span>
+                                <span class="feature">Autopilot</span>
+                                <span class="feature">Premium Audio</span>
+                            </div>
+                            <div class="vehicle-price">$105,000</div>
+                            <div class="vehicle-actions">
+                                <button class="btn btn-primary" onclick="scheduleTestDrive('Tesla Model X')">Schedule Test Drive</button>
+                                <button class="btn btn-outline" onclick="viewDetails('Model X')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="electric" class="vehicle-section">
+            <div class="container">
+                <h2 class="section-title">Electric Vehicles</h2>
+                <p class="section-subtitle">Embrace the future of driving with our innovative electric vehicle collection.</p>
+                
+                <div class="vehicle-grid">
+                    <div class="vehicle-card" data-category="electric" data-price="95000">
+                        <div class="vehicle-image electric-1"></div>
+                        <div class="vehicle-content">
+                            <div class="vehicle-badge">Best Seller</div>
+                            <h3>Tesla Model S Plaid 2024</h3>
+                            <div class="vehicle-specs">
+                                <span>Electric</span>
+                                <span>1,020 HP</span>
+                                <span>AWD</span>
+                            </div>
+                            <p>The ultimate electric sedan with record-breaking performance and revolutionary technology.</p>
+                            <div class="vehicle-features">
+                                <span class="feature">Autopilot</span>
+                                <span class="feature">0-60 in 1.99s</span>
+                                <span class="feature">405 Mile Range</span>
+                            </div>
+                            <div class="vehicle-price">$95,000</div>
+                            <div class="vehicle-actions">
+                                <button class="btn btn-primary" onclick="scheduleTestDrive('Tesla Model S')">Schedule Test Drive</button>
+                                <button class="btn btn-outline" onclick="viewDetails('Model S')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vehicle-card" data-category="electric" data-price="87000">
+                        <div class="vehicle-image electric-2"></div>
+                        <div class="vehicle-content">
+                            <div class="vehicle-badge">Luxury EV</div>
+                            <h3>Lucid Air Grand Touring 2024</h3>
+                            <div class="vehicle-specs">
+                                <span>Electric</span>
+                                <span>819 HP</span>
+                                <span>AWD</span>
+                            </div>
+                            <p>Luxury electric sedan with exceptional range, premium comfort, and stunning design.</p>
+                            <div class="vehicle-features">
+                                <span class="feature">516 Mile Range</span>
+                                <span class="feature">DreamDrive Pro</span>
+                                <span class="feature">Glass Canopy</span>
+                            </div>
+                            <div class="vehicle-price">$87,000</div>
+                            <div class="vehicle-actions">
+                                <button class="btn btn-primary" onclick="scheduleTestDrive('Lucid Air')">Schedule Test Drive</button>
+                                <button class="btn btn-outline" onclick="viewDetails('Lucid Air')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vehicle-card" data-category="electric" data-price="72000">
+                        <div class="vehicle-image electric-3"></div>
+                        <div class="vehicle-content">
+                            <div class="vehicle-badge">Premium</div>
+                            <h3>Porsche Taycan 4S 2024</h3>
+                            <div class="vehicle-specs">
+                                <span>Electric</span>
+                                <span>590 HP</span>
+                                <span>AWD</span>
+                            </div>
+                            <p>Sports car DNA meets electric innovation in this thrilling performance sedan.</p>
+                            <div class="vehicle-features">
+                                <span class="feature">800V Architecture</span>
+                                <span class="feature">Sport Chrono</span>
+                                <span class="feature">PASM</span>
+                            </div>
+                            <div class="vehicle-price">$72,000</div>
+                            <div class="vehicle-actions">
+                                <button class="btn btn-primary" onclick="scheduleTestDrive('Porsche Taycan')">Schedule Test Drive</button>
+                                <button class="btn btn-outline" onclick="viewDetails('Taycan')">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="financing-section">
+            <div class="container">
+                <h2 class="section-title">Flexible Financing Options</h2>
+                <div class="financing-grid">
+                    <div class="financing-card">
+                        <h3>Leasing Programs</h3>
+                        <p>Drive the latest luxury vehicles with flexible lease terms and lower monthly payments.</p>
+                        <ul>
+                            <li>24-48 month terms</li>
+                            <li>Low mileage options</li>
+                            <li>Gap protection included</li>
+                        </ul>
+                        <button class="btn btn-outline">Learn More</button>
+                    </div>
+                    <div class="financing-card">
+                        <h3>Financing Solutions</h3>
+                        <p>Competitive rates and flexible terms to make your dream car a reality.</p>
+                        <ul>
+                            <li>0-20% down payment</li>
+                            <li>60-84 month terms</li>
+                            <li>Pre-approval available</li>
+                        </ul>
+                        <button class="btn btn-outline">Apply Now</button>
+                    </div>
+                    <div class="financing-card">
+                        <h3>Trade-In Program</h3>
+                        <p>Get top value for your current vehicle with our hassle-free trade-in process.</p>
+                        <ul>
+                            <li>Instant online quotes</li>
+                            <li>Fair market values</li>
+                            <li>Apply to purchase</li>
+                        </ul>
+                        <button class="btn btn-outline">Get Quote</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Can't Find What You're Looking For?</h2>
+                    <p>Our inventory is constantly updating. Contact us to find your perfect vehicle or arrange a special order.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary">Contact Our Team</a>
+                        <a href="services.html#trade" class="btn btn-secondary">Value Your Trade</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Prestige Motors</h3>
+                    <p>Your trusted partner in luxury automotive excellence since 2008.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="vehicles.html">Vehicle Inventory</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#sales">Vehicle Sales</a></li>
+                        <li><a href="services.html#financing">Financing Options</a></li>
+                        <li><a href="services.html#maintenance">Maintenance</a></li>
+                        <li><a href="services.html#trade">Trade-In Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📍 123 Luxury Lane, Beverly Hills, CA 90210</li>
+                        <li>📞 (555) 123-4567</li>
+                        <li>✉️ info@prestigemotors.com</li>
+                        <li>🕐 Mon-Sat: 9AM-8PM, Sun: 11AM-6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Prestige Motors. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

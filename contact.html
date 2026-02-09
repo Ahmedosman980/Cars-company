@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Prestige Motors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>Prestige Motors</h1>
+                    <span class="tagline">Excellence in Motion</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="vehicles.html" class="nav-link">Vehicles</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Contact Prestige Motors</h1>
+                <p>Get in touch with our expert team for inquiries, test drives, or premium automotive services. We're here to assist you.</p>
+            </div>
+        </section>
+
+        <section class="contact-main">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-section">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and our team will respond within 24 hours.</p>
+                        
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="inquiryType">Inquiry Type *</label>
+                                <select id="inquiryType" name="inquiryType" required>
+                                    <option value="">Please select...</option>
+                                    <option value="sales">Vehicle Sales</option>
+                                    <option value="test-drive">Schedule Test Drive</option>
+                                    <option value="service">Service & Maintenance</option>
+                                    <option value="financing">Financing Information</option>
+                                    <option value="trade-in">Trade-In Evaluation</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="complaint">Customer Service</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="vehicleInterest">Vehicle of Interest (Optional)</label>
+                                <input type="text" id="vehicleInterest" name="vehicleInterest" placeholder="e.g., Mercedes-Benz S-Class, Tesla Model X">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="preferredContact">Preferred Contact Method</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="preferredContact" value="email" checked>
+                                        <span>Email</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="preferredContact" value="phone">
+                                        <span>Phone</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="preferredContact" value="text">
+                                        <span>Text Message</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="bestTime">Best Time to Contact</label>
+                                <select id="bestTime" name="bestTime">
+                                    <option value="anytime">Anytime</option>
+                                    <option value="morning">Morning (9AM-12PM)</option>
+                                    <option value="afternoon">Afternoon (12PM-5PM)</option>
+                                    <option value="evening">Evening (5PM-7PM)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span>Send me exclusive offers and vehicle updates</span>
+                                </label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <span>I agree to the privacy policy and terms of service *</span>
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info-section">
+                        <div class="contact-info-card">
+                            <h3>Main Showroom</h3>
+                            <div class="contact-details">
+                                <p class="address">📍 123 Luxury Lane, Beverly Hills, CA 90210</p>
+                                <p class="phone">📞 (555) 123-4567</p>
+                                <p class="email">✉️ info@prestigemotors.com</p>
+                                <div class="hours">
+                                    <p><strong>Hours:</strong></p>
+                                    <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
+                                    <p>Saturday: 9:00 AM - 7:00 PM</p>
+                                    <p>Sunday: 11:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline" onclick="getDirections()">Get Directions</button>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <h3>Service Center</h3>
+                            <div class="contact-details">
+                                <p class="address">📍 125 Service Drive, Beverly Hills, CA 90210</p>
+                                <p class="phone">📞 (555) 123-4568</p>
+                                <p class="email">✉️ service@prestigemotors.com</p>
+                                <div class="hours">
+                                    <p><strong>Hours:</strong></p>
+                                    <p>Monday - Friday: 7:00 AM - 7:00 PM</p>
+                                    <p>Saturday: 8:00 AM - 5:00 PM</p>
+                                    <p>Sunday: Closed</p>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline" onclick="scheduleService()">Schedule Service</button>
+                        </div>
+                        
+                        <div class="contact-info-card emergency">
+                            <h3>24/7 Emergency Support</h3>
+                            <div class="contact-details">
+                                <p class="phone">📞 (555) 123-4569</p>
+                                <p class="email">✉️ emergency@prestigemotors.com</p>
+                                <p>Available 24/7 for roadside assistance and urgent service needs.</p>
+                            </div>
+                            <button class="btn btn-primary" onclick="callEmergency()">Call Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="test-drive-section">
+            <div class="container">
+                <h2 class="section-title">Schedule a Test Drive</h2>
+                <p class="section-subtitle">Experience luxury driving firsthand with a personalized test drive</p>
+                
+                <div class="test-drive-form">
+                    <form id="testDriveForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="testVehicle">Select Vehicle *</label>
+                                <select id="testVehicle" name="testVehicle" required>
+                                    <option value="">Choose a vehicle...</option>
+                                    <optgroup label="Luxury Sedans">
+                                        <option value="mercedes-s-class">Mercedes-Benz S-Class 2024</option>
+                                        <option value="bmw-7-series">BMW 7 Series 2024</option>
+                                        <option value="audi-a8">Audi A8 2024</option>
+                                    </optgroup>
+                                    <optgroup label="Sports Cars">
+                                        <option value="porsche-911">Porsche 911 Carrera 4S 2024</option>
+                                        <option value="ferrari-roma">Ferrari Roma 2024</option>
+                                        <option value="corvette-z06">Chevrolet Corvette Z06 2024</option>
+                                    </optgroup>
+                                    <optgroup label="Premium SUVs">
+                                        <option value="range-rover-sport">Range Rover Sport 2024</option>
+                                        <option value="bmw-x7">BMW X7 2024</option>
+                                        <option value="tesla-model-x">Tesla Model X Plaid 2024</option>
+                                    </optgroup>
+                                    <optgroup label="Electric Vehicles">
+                                        <option value="tesla-model-s">Tesla Model S Plaid 2024</option>
+                                        <option value="lucid-air">Lucid Air Grand Touring 2024</option>
+                                        <option value="porsche-taycan">Porsche Taycan 4S 2024</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="testDate">Preferred Date *</label>
+                                <input type="date" id="testDate" name="testDate" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="testTime">Preferred Time *</label>
+                                <select id="testTime" name="testTime" required>
+                                    <option value="">Select time...</option>
+                                    <option value="9:00">9:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="15:00">3:00 PM</option>
+                                    <option value="16:00">4:00 PM</option>
+                                    <option value="17:00">5:00 PM</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="testDuration">Duration</label>
+                                <select id="testDuration" name="testDuration">
+                                    <option value="30">30 minutes</option>
+                                    <option value="60">1 hour</option>
+                                    <option value="90">1.5 hours</option>
+                                    <option value="120">2 hours</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="testNotes">Special Requests or Notes</label>
+                            <textarea id="testNotes" name="testNotes" rows="3" placeholder="Any specific routes, features you'd like to test, or questions for our team..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="testLicense" name="testLicense" required>
+                                <span>I have a valid driver's license and am at least 21 years old *</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Schedule Test Drive</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="locations-section">
+            <div class="container">
+                <h2 class="section-title">Our Locations</h2>
+                <p class="section-subtitle">Visit us at any of our premium automotive destinations</p>
+                
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <div class="location-image beverly-hills"></div>
+                        <div class="location-content">
+                            <h3>Beverly Hills Flagship</h3>
+                            <p>123 Luxury Lane, Beverly Hills, CA 90210</p>
+                            <p>(555) 123-4567</p>
+                            <div class="location-features">
+                                <span>🏆 Flagship Showroom</span>
+                                <span>🚗 200+ Vehicle Inventory</span>
+                                <span>🔧 Full Service Center</span>
+                                <span>🍾 VIP Lounge</span>
+                            </div>
+                            <button class="btn btn-outline" onclick="locationDetails('beverly-hills')">View Details</button>
+                        </div>
+                    </div>
+                    
+                    <div class="location-card">
+                        <div class="location-image newport"></div>
+                        <div class="location-content">
+                            <h3>Newport Beach</h3>
+                            <p>456 Coast Highway, Newport Beach, CA 92660</p>
+                            <p>(555) 987-6543</p>
+                            <div class="location-features">
+                                <span>🌊 Oceanfront Location</span>
+                                <span>🚗 150+ Vehicle Inventory</span>
+                                <span>🔧 Express Service</span>
+                                <span>☕ Premium Café</span>
+                            </div>
+                            <button class="btn btn-outline" onclick="locationDetails('newport-beach')">View Details</button>
+                        </div>
+                    </div>
+                    
+                    <div class="location-card">
+                        <div class="location-image west-hollywood"></div>
+                        <div class="location-content">
+                            <h3>West Hollywood</h3>
+                            <p>789 Sunset Boulevard, West Hollywood, CA 90069</p>
+                            <p>(555) 456-7890</p>
+                            <div class="location-features">
+                                <span>🌟 Boutique Experience</span>
+                                <span>🚗 100+ Vehicle Inventory</span>
+                                <span>🎨 Customization Studio</span>
+                                <span>🎭 Design District</span>
+                            </div>
+                            <button class="btn btn-outline" onclick="locationDetails('west-hollywood')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <div class="container">
+                <h2 class="section-title">Our Expert Team</h2>
+                <p class="section-subtitle">Connect with our specialists for personalized assistance</p>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-image sales-consultant"></div>
+                        <div class="member-info">
+                            <h3>Michael Rodriguez</h3>
+                            <p>Sales Consultant</p>
+                            <p>📞 (555) 123-1001</p>
+                            <p>✉️ m.rodriguez@prestigemotors.com</p>
+                            <p>Specializes in: Luxury Sedans & Electric Vehicles</p>
+                            <button class="btn btn-outline" onclick="contactTeamMember('michael')">Contact</button>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-image service-advisor"></div>
+                        <div class="member-info">
+                            <h3>Sarah Chen</h3>
+                            <p>Service Advisor</p>
+                            <p>📞 (555) 123-1002</p>
+                            <p>✉️ s.chen@prestigemotors.com</p>
+                            <p>Specializes in: Performance Vehicles & Maintenance</p>
+                            <button class="btn btn-outline" onclick="contactTeamMember('sarah')">Contact</button>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-image finance-manager"></div>
+                        <div class="member-info">
+                            <h3>James Thompson</h3>
+                            <p>Finance Manager</p>
+                            <p>📞 (555) 123-1003</p>
+                            <p>✉️ j.thompson@prestigemotors.com</p>
+                            <p>Specializes in: Financing & Leasing Solutions</p>
+                            <button class="btn btn-outline" onclick="contactTeamMember('james')">Contact</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>How do I schedule a test drive?</h3>
+                        <p>You can schedule a test drive through our website using the form above, call us directly at (555) 123-4567, or visit any of our showrooms. We recommend booking in advance to ensure your preferred vehicle and time are available.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What documents do I need for a test drive?</h3>
+                        <p>You'll need a valid driver's license, must be at least 21 years old, and provide proof of insurance. For certain high-performance vehicles, additional requirements may apply.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you offer financing options?</h3>
+                        <p>Yes, we work with over 20 premium lenders to offer competitive financing and leasing options. You can apply online through our website or speak with our finance team to explore personalized solutions.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What is your trade-in process?</h3>
+                        <p>We offer complimentary trade-in evaluations. Simply bring your vehicle to any of our locations for a professional appraisal, or get an instant online quote through our website. We provide fair market values and can apply the amount directly to your new purchase.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you provide delivery services?</h3>
+                        <p>Yes, we offer white-glove delivery services within 100 miles of our showrooms. We can also arrange nationwide shipping for our out-of-state customers. Contact us for delivery options and pricing.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What after-sales services do you offer?</h3>
+                        <p>We provide comprehensive after-sales support including maintenance services, warranty coverage, 24/7 roadside assistance, and access to our exclusive membership program with premium benefits.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-section">
+            <div class="container">
+                <h2 class="section-title">Connect With Us</h2>
+                <p class="section-subtitle">Follow us for the latest luxury vehicle updates and exclusive offers</p>
+                
+                <div class="social-content">
+                    <div class="social-links-large">
+                        <a href="#" class="social-link-large facebook">
+                            <span class="social-icon">📘</span>
+                            <span class="social-name">Facebook</span>
+                            <span class="social-follow">50K+ Followers</span>
+                        </a>
+                        <a href="#" class="social-link-large instagram">
+                            <span class="social-icon">📷</span>
+                            <span class="social-name">Instagram</span>
+                            <span class="social-follow">75K+ Followers</span>
+                        </a>
+                        <a href="#" class="social-link-large twitter">
+                            <span class="social-icon">🐦</span>
+                            <span class="social-name">Twitter</span>
+                            <span class="social-follow">25K+ Followers</span>
+                        </a>
+                        <a href="#" class="social-link-large linkedin">
+                            <span class="social-icon">💼</span>
+                            <span class="social-name">LinkedIn</span>
+                            <span class="social-follow">15K+ Followers</span>
+                        </a>
+                        <a href="#" class="social-link-large youtube">
+                            <span class="social-icon">📺</span>
+                            <span class="social-name">YouTube</span>
+                            <span class="social-follow">100K+ Subscribers</span>
+                        </a>
+                    </div>
+                    
+                    <div class="social-benefits">
+                        <h3>Why Follow Us?</h3>
+                        <ul>
+                            <li>🚗 Exclusive vehicle reveals and test drives</li>
+                            <li>🎫 Early access to special events and offers</li>
+                            <li>📰 Industry news and luxury automotive insights</li>
+                            <li>🏆 Behind-the-scenes content from our showrooms</li>
+                            <li>💬 Direct engagement with our expert team</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Experience Excellence?</h2>
+                    <p>Visit our showroom, schedule a test drive, or contact our team to begin your luxury automotive journey with Prestige Motors.</p>
+                    <div class="cta-buttons">
+                        <a href="vehicles.html" class="btn btn-primary">Browse Inventory</a>
+                        <a href="#" class="btn btn-secondary" onclick="scrollToForm()">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Prestige Motors</h3>
+                    <p>Your trusted partner in luxury automotive excellence since 2008.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="vehicles.html">Vehicle Inventory</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#sales">Vehicle Sales</a></li>
+                        <li><a href="services.html#financing">Financing Options</a></li>
+                        <li><a href="services.html#maintenance">Maintenance</a></li>
+                        <li><a href="services.html#trade">Trade-In Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📍 123 Luxury Lane, Beverly Hills, CA 90210</li>
+                        <li>📞 (555) 123-4567</li>
+                        <li>✉️ info@prestigemotors.com</li>
+                        <li>🕐 Mon-Sat: 9AM-8PM, Sun: 11AM-6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Prestige Motors. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
